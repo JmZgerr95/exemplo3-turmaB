@@ -16,10 +16,10 @@ public class Produto {
     private Long id;
 
     @NotBlank 
-    @Positive //Número maior que 0 e positivo
     private String nome;
 
-    @NotNull 
+    @NotNull
+    @Positive //Número maior que 0 e positivo
     private Double preco;
     
     public Produto() {
